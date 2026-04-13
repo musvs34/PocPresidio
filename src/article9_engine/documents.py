@@ -12,7 +12,6 @@ class DocumentChunk:
     chunk_id: str
     text: str
     page_number: int | None = None
-    line_offset: int = 0
 
 
 def _extract_pdf_chunks(path: Path) -> list[DocumentChunk]:
@@ -59,9 +58,7 @@ def _extract_csv_chunks(path: Path) -> list[DocumentChunk]:
         for index, row in enumerate(reader, start=1):
             rendered = ", ".join(f"{key}={value}" for key, value in row.items())
             lines.append(f"row={index}: {rendered}")
-    return [
-        DocumentChunk(file_path=path, chunk_id="csv", text="\n".join(lines))
-    ]
+    return [DocumentChunk(file_path=path, chunk_id="csv", text="\n".join(lines))]
 
 
 def extract_document_chunks(path: str | Path) -> list[DocumentChunk]:

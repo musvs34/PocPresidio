@@ -1,0 +1,240 @@
+language: fr
+normalization:
+  lowercase: true
+  strip_accents: true
+  collapse_whitespace: true
+  normalize_apostrophes: true
+  normalize_dashes: true
+fuzzy:
+  enabled: true
+  similarity_threshold: 88
+  max_ngram_length_delta: 1
+linguistics:
+  spacy_model: fr_core_news_md
+semantic:
+  enabled: true
+  model_name: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  similarity_threshold: 0.62
+scoring:
+  alert_threshold: 0.75
+  review_threshold: 0.45
+  method_weights:
+    lexical: 0.40
+    fuzzy: 0.25
+    linguistic: 0.20
+    semantic: 0.30
+    presidio: 0.15
+categories:
+  - key: RELIGION_BELIEF
+    label: Religion ou convictions
+    description: Indices de religion, conviction ou pratique confessionnelle.
+    terms:
+      - religion
+      - convictions religieuses
+      - croyance
+      - croyant
+      - croyante
+      - foi
+      - pratique religieuse
+      - tres croyante
+      - tres croyant
+    synonyms:
+      - paroisse
+      - eglise
+      - mosquee
+      - synagogue
+      - temple
+      - imam
+      - cure
+      - pasteur
+      - judaisme
+      - christianisme
+      - islam
+      - catholicisme
+      - protestantisme
+    context_terms:
+      - conseil
+      - beneficiaire
+      - commentaire
+      - convictions
+      - religion
+      - culte
+      - priere
+    field_hints:
+      - conseil
+      - beneficiaire
+      - commentaire
+      - observations
+    semantic_anchors:
+      - personne tres croyante
+      - pratique religieuse reguliere
+      - appartenance confessionnelle
+      - convictions religieuses fortes
+      - vie paroissiale
+    thresholds:
+      alert: 0.74
+      review: 0.42
+  - key: HEALTH_DATA
+    label: Donnees de sante
+    description: Indices de pathologie, traitement, incapacite ou questionnaire medical.
+    terms:
+      - questionnaire medical
+      - antecedent
+      - pathologie
+      - traitement
+      - hospitalisation
+      - invalidite
+      - incapacite
+      - diabete
+      - cancer
+      - vih
+      - depression
+    synonyms:
+      - ald
+      - arret de travail
+      - affection longue duree
+      - suivi medical
+      - tension arterielle
+      - maladie chronique
+      - handicap
+    context_terms:
+      - medical
+      - sante
+      - selection medicale
+      - expertise medicale
+      - declaration de sante
+      - souscription
+    field_hints:
+      - conseil
+      - questionnaire
+      - observations
+      - beneficiaire
+    semantic_anchors:
+      - situation de sante fragile
+      - traitement medical en cours
+      - antecedents medicaux significatifs
+      - suivi hospitalier
+    thresholds:
+      alert: 0.78
+      review: 0.48
+  - key: SEXUAL_ORIENTATION
+    label: Orientation sexuelle ou vie sexuelle
+    description: Indices touchant a l'orientation sexuelle ou a la vie sexuelle.
+    terms:
+      - orientation sexuelle
+      - vie sexuelle
+      - homosexuel
+      - homosexuelle
+      - gay
+      - lesbienne
+      - bisexuel
+      - bisexuelle
+    synonyms:
+      - compagnon de meme sexe
+      - compagne de meme sexe
+      - partenaire de meme sexe
+      - relation homosexuelle
+    context_terms:
+      - conseil
+      - beneficiaire
+      - conjoint
+      - partenaire
+      - vie privee
+    field_hints:
+      - conseil
+      - beneficiaire
+      - commentaire
+    semantic_anchors:
+      - partenaire du meme sexe
+      - relation avec une personne du meme sexe
+      - vie affective de meme sexe
+    thresholds:
+      alert: 0.80
+      review: 0.50
+  - key: POLITICAL_OPINION
+    label: Opinions politiques
+    description: Indices d'opinions politiques ou d'engagement politique.
+    terms:
+      - opinion politique
+      - opinions politiques
+      - engagement politique
+      - militant politique
+      - convictions politiques
+    synonyms:
+      - parti politique
+      - elu local
+      - depute
+      - campagne electorale
+      - sympathisant politique
+    context_terms:
+      - conseil
+      - commentaire
+      - engagement
+      - militant
+    field_hints:
+      - conseil
+      - observations
+    semantic_anchors:
+      - engagement partisan
+      - prise de position politique
+      - appartenance a un mouvement politique
+    thresholds:
+      alert: 0.76
+      review: 0.45
+  - key: UNION_MEMBERSHIP
+    label: Appartenance syndicale
+    description: Indices d'appartenance syndicale ou d'activite syndicale.
+    terms:
+      - syndicat
+      - appartenance syndicale
+      - militant syndical
+      - delegue syndical
+    synonyms:
+      - cgt
+      - cfdt
+      - force ouvriere
+      - cfe cgc
+      - union syndicale
+    context_terms:
+      - conseil
+      - commentaire
+      - mandat
+      - representation
+    field_hints:
+      - conseil
+      - observations
+    semantic_anchors:
+      - implication syndicale
+      - mandat de representation syndicale
+      - activite au sein d'un syndicat
+    thresholds:
+      alert: 0.78
+      review: 0.47
+  - key: GENETIC_BIOMETRIC
+    label: Donnees genetiques ou biometrie
+    description: Indices de donnees genetiques ou biometrie.
+    terms:
+      - donnees genetiques
+      - biometrie
+      - empreinte digitale
+      - reconnaissance faciale
+      - adn
+    synonyms:
+      - genetique
+      - profil genetique
+      - donnees biometriques
+      - biometrique
+    context_terms:
+      - identification
+      - medical
+      - conseil
+    field_hints:
+      - conseil
+      - commentaire
+    semantic_anchors:
+      - utilisation d'un profil genetique
+      - donnees d'identification biometrique
+      - comparaison d'empreintes
+    thresholds:
+      alert: 0.82
+      review: 0.52

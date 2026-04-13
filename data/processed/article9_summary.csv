@@ -1,0 +1,8 @@
+file_name,file_path,file_type,status,chunk_count,finding_count,max_score,max_risk_level,error_message
+adhesion_emilie_bernard_conseil_non_professionnel.pdf,data\raw\adhesion_emilie_bernard_conseil_non_professionnel.pdf,.pdf,ok,3,1,0.9,high,
+adhesion_julien_martin.pdf,data\raw\adhesion_julien_martin.pdf,.pdf,ok,3,1,0.9,high,
+adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,ok,3,1,0.9,high,
+adhesion_nadia_benali.pdf,data\raw\adhesion_nadia_benali.pdf,.pdf,ok,3,1,0.9,high,
+adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,data\raw\adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,.pdf,ok,3,1,0.9,high,
+adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,data\raw\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,.pdf,ok,3,1,0.9,high,
+souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,ok,6,2,0.9,high,

@@ -1,0 +1,22 @@
+[
+  {
+    "text_id": "exemple_01",
+    "text": "Champ conseil : cliente tres croyante, tres impliquee dans sa paroisse."
+  },
+  {
+    "text_id": "exemple_02",
+    "text": "Zone beneficiaire : le partenaire de meme sexe est mentionne comme seul beneficiaire."
+  },
+  {
+    "text_id": "exemple_03",
+    "text": "Observation libre : antecedents medicaux avec traitement en cours pour diabete."
+  },
+  {
+    "text_id": "exemple_04",
+    "text": "Commentaire : engagement syndical local et mandat de delegue syndical."
+  },
+  {
+    "text_id": "exemple_05",
+    "text": "Note interne : tres investi dans une campagne electorale municipale."
+  }
+]

@@ -4,3 +4,7 @@ pypdf
 pandas
 matplotlib
 jupyter
+PyYAML
+RapidFuzz
+spacy
+sentence-transformers

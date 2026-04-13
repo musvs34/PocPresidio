@@ -3,12 +3,13 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from article9_pipeline.scanner import scan_documents, write_outputs
+from article9_engine import Article9Engine
+from article9_engine.reporting import analyze_directory, write_reports
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Scan raw files for RGPD article 9 hints using Presidio-style recognizers."
+        description="Scan raw files for RGPD article 9 hints with a multicouche French engine."
     )
     parser.add_argument(
         "--input-dir",
@@ -16,9 +17,9 @@ def main() -> None:
         help="Directory containing the raw documents to scan.",
     )
     parser.add_argument(
-        "--vocabulary",
-        default="configs/article9_vocabulary_template.csv",
-        help="CSV vocabulary used to build the custom recognizers.",
+        "--config",
+        default="configs/article9_categories.yml",
+        help="YAML configuration used to build the article 9 engine.",
     )
     parser.add_argument(
         "--output-dir",
@@ -27,12 +28,12 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    findings, summary_rows = scan_documents(args.input_dir, args.vocabulary)
-    outputs = write_outputs(findings, summary_rows, args.output_dir)
+    engine = Article9Engine(config_path=args.config)
+    analyses = analyze_directory(engine, args.input_dir)
+    outputs = write_reports(analyses, args.output_dir)
 
     print(f"Scanned directory: {Path(args.input_dir).resolve()}")
-    print(f"Findings: {len(findings)}")
-    print(f"Summary rows: {len(summary_rows)}")
+    print(f"Chunks analyzed: {len(analyses)}")
     for label, path in outputs.items():
         print(f"{label}: {path.resolve()}")
 

@@ -1,0 +1,9 @@
+file_name,file_path,file_type,chunk_id,page_number,line_number,entity_name,matched_text,start,end,raw_score,adjusted_score,context_hits,risk_level
+adhesion_emilie_bernard_conseil_non_professionnel.pdf,data\raw\adhesion_emilie_bernard_conseil_non_professionnel.pdf,.pdf,page_2,2,16,HEALTH_ARTICLE9,Traitement,521,531,0.9,0.9,,high
+adhesion_julien_martin.pdf,data\raw\adhesion_julien_martin.pdf,.pdf,page_2,2,16,HEALTH_ARTICLE9,Traitement,597,607,0.9,0.9,,high
+adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,page_2,2,15,HEALTH_ARTICLE9,Traitement,490,500,0.9,0.9,,high
+adhesion_nadia_benali.pdf,data\raw\adhesion_nadia_benali.pdf,.pdf,page_2,2,15,HEALTH_ARTICLE9,Traitement,566,576,0.9,0.9,,high
+adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,data\raw\adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,.pdf,page_2,2,19,HEALTH_ARTICLE9,Traitement,745,755,0.9,0.9,,high
+adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,data\raw\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,.pdf,page_2,2,15,HEALTH_ARTICLE9,Traitement,473,483,0.9,0.9,,high
+souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,page_2,2,16,HEALTH_ARTICLE9,Traitement,597,607,0.9,0.9,,high
+souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,page_5,5,15,HEALTH_ARTICLE9,Traitement,566,576,0.9,0.9,,high
