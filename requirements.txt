@@ -1,0 +1,6 @@
+presidio-analyzer
+presidio-anonymizer
+pypdf
+pandas
+matplotlib
+jupyter

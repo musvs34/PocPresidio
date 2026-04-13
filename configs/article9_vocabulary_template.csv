@@ -1,0 +1,23 @@
+entity_name,entry_type,value,language,score,enabled,document_scope,section_scope,source,notes
+HEALTH_ARTICLE9,term,questionnaire medical,fr,0.85,true,assurance_vie,souscription,metier,Expression sensible sante
+HEALTH_ARTICLE9,term,antecedent,fr,0.65,true,assurance_vie,medical,metier,Terme generique a renforcer par contexte
+HEALTH_ARTICLE9,term,pathologie,fr,0.75,true,assurance_vie,medical,metier,
+HEALTH_ARTICLE9,term,traitement,fr,0.70,true,assurance_vie,medical,metier,
+HEALTH_ARTICLE9,term,hospitalisation,fr,0.80,true,assurance_vie,medical,metier,
+HEALTH_ARTICLE9,term,diabete,fr,0.90,true,assurance_vie,medical,metier,
+HEALTH_ARTICLE9,term,cancer,fr,0.90,true,assurance_vie,medical,metier,
+HEALTH_ARTICLE9,term,invalidite,fr,0.80,true,assurance_vie,prestations,metier,
+HEALTH_ARTICLE9,context,sante,fr,0.20,true,assurance_vie,medical,metier,Contexte renforcant
+HEALTH_ARTICLE9,context,medical,fr,0.20,true,assurance_vie,medical,metier,
+HEALTH_ARTICLE9,context,selection medicale,fr,0.25,true,assurance_vie,souscription,metier,
+HEALTH_ARTICLE9,context,expertise medicale,fr,0.25,true,assurance_vie,sinistre,metier,
+GENETIC_OR_BIOMETRIC_HINT,term,donnees genetiques,fr,0.95,true,assurance_vie,medical,metier,
+GENETIC_OR_BIOMETRIC_HINT,term,biometrie,fr,0.90,true,assurance_vie,identification,metier,
+GENETIC_OR_BIOMETRIC_HINT,term,empreinte digitale,fr,0.95,true,assurance_vie,identification,metier,
+GENETIC_OR_BIOMETRIC_HINT,context,identification unique,fr,0.20,true,assurance_vie,identification,metier,
+POLITICAL_RELIGIOUS_ORIENTATION_HINT,term,religion,fr,0.85,true,assurance_vie,libre,metier,
+POLITICAL_RELIGIOUS_ORIENTATION_HINT,term,orientation sexuelle,fr,0.95,true,assurance_vie,libre,metier,
+POLITICAL_RELIGIOUS_ORIENTATION_HINT,term,opinion politique,fr,0.95,true,assurance_vie,libre,metier,
+POLITICAL_RELIGIOUS_ORIENTATION_HINT,context,convictions,fr,0.20,true,assurance_vie,libre,metier,
+POLITICAL_RELIGIOUS_ORIENTATION_HINT,context,croyance,fr,0.20,true,assurance_vie,libre,metier,
+HEALTH_ARTICLE9,regex,\bALD\b,fr,0.85,true,assurance_vie,medical,metier,Acronyme utile en assurance
