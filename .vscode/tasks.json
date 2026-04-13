@@ -1,0 +1,93 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install Requirements (.venvPresidio)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venvPresidio\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "${workspaceFolder}\\requirements.txt"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Download spaCy FR Model (.venvPresidio)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venvPresidio\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "spacy",
+        "download",
+        "fr_core_news_md"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Prepare Article 9 Resources",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venvPresidio\\Scripts\\python.exe",
+      "args": [
+        "${workspaceFolder}\\src\\run_article9_prepare_resources.py",
+        "--config",
+        "${workspaceFolder}\\configs\\article9_categories.yml"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Article 9 Scan (Offline)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\run_article9_scan.ps1"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Article 9 Examples",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venvPresidio\\Scripts\\python.exe",
+      "args": [
+        "${workspaceFolder}\\src\\run_article9_examples.py",
+        "--config",
+        "${workspaceFolder}\\configs\\article9_categories.yml",
+        "--examples",
+        "${workspaceFolder}\\examples\\article9_sample_sentences.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Python Version (.venvPresidio)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venvPresidio\\Scripts\\python.exe",
+      "args": [
+        "--version"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

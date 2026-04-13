@@ -1,0 +1,2204 @@
+[
+  {
+    "text_id": "adhesion_claire_dumas_conseil_personne_tres_croyante.pdf:page_1",
+    "metadata": {
+      "file_name": "adhesion_claire_dumas_conseil_personne_tres_croyante.pdf",
+      "file_path": "data\\raw\\adhesion_claire_dumas_conseil_personne_tres_croyante.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.8867,
+        "decision": "alert",
+        "method_scores": {
+          "lexical": 0.8,
+          "linguistic": 0.7
+        },
+        "explanation": "lexical -> 'croyant' (0.80); lexical -> 'croyante' (0.80); lexical -> 'tres croyante' (0.80)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.8,
+            "trigger": "croyant",
+            "matched_variant": "croyant",
+            "sentence": "neant\nConseil: commentaire conseiller\npersonne tres croyante\nSignature: recue le 13/04/2026",
+            "context_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "field_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'croyant' dans la phrase.",
+            "metadata": {
+              "sentence_index": 2
+            }
+          },
+          {
+            "method": "lexical",
+            "score": 0.8,
+            "trigger": "croyante",
+            "matched_variant": "croyante",
+            "sentence": "neant\nConseil: commentaire conseiller\npersonne tres croyante\nSignature: recue le 13/04/2026",
+            "context_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "field_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'croyante' dans la phrase.",
+            "metadata": {
+              "sentence_index": 2
+            }
+          },
+          {
+            "method": "lexical",
+            "score": 0.8,
+            "trigger": "tres croyante",
+            "matched_variant": "tres croyante",
+            "sentence": "neant\nConseil: commentaire conseiller\npersonne tres croyante\nSignature: recue le 13/04/2026",
+            "context_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "field_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'tres croyante' dans la phrase.",
+            "metadata": {
+              "sentence_index": 2
+            }
+          },
+          {
+            "method": "lexical",
+            "score": 0.8,
+            "trigger": "tres croyant",
+            "matched_variant": "tres croyant",
+            "sentence": "neant\nConseil: commentaire conseiller\npersonne tres croyante\nSignature: recue le 13/04/2026",
+            "context_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "field_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'tres croyant' dans la phrase.",
+            "metadata": {
+              "sentence_index": 2
+            }
+          },
+          {
+            "method": "linguistic",
+            "score": 0.7,
+            "trigger": "croyance",
+            "matched_variant": "croy",
+            "sentence": "neant\nConseil: commentaire conseiller\npersonne tres croyante\nSignature: recue le 13/04/2026",
+            "context_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "field_hits": [
+              "conseil",
+              "commentaire"
+            ],
+            "explanation": "Correspondance linguistique par racines/lemmes pour 'croyance' avec les racines detectees ['croy'].",
+            "metadata": {
+              "sentence_index": 2,
+              "overlap": [
+                "croy"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.71,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.71
+        },
+        "explanation": "lexical -> 'questionnaire medical' (0.71)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.71,
+            "trigger": "questionnaire medical",
+            "matched_variant": "questionnaire medical",
+            "sentence": "Nom: Claire Dumas\nProduit: Horizon Vie Premium\nQuestionnaire medical:",
+            "context_hits": [
+              "medical"
+            ],
+            "field_hits": [
+              "questionnaire"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'questionnaire medical' dans la phrase.",
+            "metadata": {
+              "sentence_index": 1
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_emilie_bernard_conseil_non_professionnel.pdf:page_1",
+    "metadata": {
+      "file_name": "adhesion_emilie_bernard_conseil_non_professionnel.pdf",
+      "file_path": "data\\raw\\adhesion_emilie_bernard_conseil_non_professionnel.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_emilie_bernard_conseil_non_professionnel.pdf:page_2",
+    "metadata": {
+      "file_name": "adhesion_emilie_bernard_conseil_non_professionnel.pdf",
+      "file_path": "data\\raw\\adhesion_emilie_bernard_conseil_non_professionnel.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_2",
+      "page_number": 2
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.66,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66
+        },
+        "explanation": "lexical -> 'traitement' (0.66)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires\nLa cliente a precise souhaiter un produit simple et peu volatil, avec possibilite de\nversements reguliers.\n9.",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 13
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_emilie_bernard_conseil_non_professionnel.pdf:page_3",
+    "metadata": {
+      "file_name": "adhesion_emilie_bernard_conseil_non_professionnel.pdf",
+      "file_path": "data\\raw\\adhesion_emilie_bernard_conseil_non_professionnel.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_3",
+      "page_number": 3
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_julien_martin.pdf:page_1",
+    "metadata": {
+      "file_name": "adhesion_julien_martin.pdf",
+      "file_path": "data\\raw\\adhesion_julien_martin.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_julien_martin.pdf:page_2",
+    "metadata": {
+      "file_name": "adhesion_julien_martin.pdf",
+      "file_path": "data\\raw\\adhesion_julien_martin.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_2",
+      "page_number": 2
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.66,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66
+        },
+        "explanation": "lexical -> 'traitement' (0.66)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 14
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_julien_martin.pdf:page_3",
+    "metadata": {
+      "file_name": "adhesion_julien_martin.pdf",
+      "file_path": "data\\raw\\adhesion_julien_martin.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_3",
+      "page_number": 3
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_laurent_moreau_capacite_inadaptee.pdf:page_1",
+    "metadata": {
+      "file_name": "adhesion_laurent_moreau_capacite_inadaptee.pdf",
+      "file_path": "data\\raw\\adhesion_laurent_moreau_capacite_inadaptee.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.6222,
+        "decision": "review",
+        "method_scores": {
+          "fuzzy": 0.6222
+        },
+        "explanation": "fuzzy -> 'incapacite' (0.62)",
+        "evidences": [
+          {
+            "method": "fuzzy",
+            "score": 0.6222,
+            "trigger": "incapacite",
+            "matched_variant": "capacite",
+            "sentence": "Adhesion Laurent Moreau Capacite Inadaptee\nfile:///D:/Workspaces/pocComplianceNLP/templates/adhesion_laurent_moreau_capacite_inadaptee.html 1/3",
+            "context_hits": [],
+            "field_hits": [],
+            "explanation": "Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.",
+            "metadata": {
+              "sentence_index": 30,
+              "similarity": 88.88888888888889
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_laurent_moreau_capacite_inadaptee.pdf:page_2",
+    "metadata": {
+      "file_name": "adhesion_laurent_moreau_capacite_inadaptee.pdf",
+      "file_path": "data\\raw\\adhesion_laurent_moreau_capacite_inadaptee.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_2",
+      "page_number": 2
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.62,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.62
+        },
+        "explanation": "lexical -> 'foi' (0.62)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.62,
+            "trigger": "foi",
+            "matched_variant": "foi",
+            "sentence": "Le client a signale des fins de mois parfois tendues mais souhaite quand meme se\nconstituer un capital rapidement.\n9.",
+            "context_hits": [],
+            "field_hits": [],
+            "explanation": "Correspondance lexicale exacte du terme 'foi' dans la phrase.",
+            "metadata": {
+              "sentence_index": 16
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.6755,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66,
+          "fuzzy": 0.6222
+        },
+        "explanation": "lexical -> 'traitement' (0.66); fuzzy -> 'incapacite' (0.62)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 15
+            }
+          },
+          {
+            "method": "fuzzy",
+            "score": 0.6222,
+            "trigger": "incapacite",
+            "matched_variant": "capacite",
+            "sentence": "Adhesion Laurent Moreau Capacite Inadaptee\nfile:///D:/Workspaces/pocComplianceNLP/templates/adhesion_laurent_moreau_capacite_inadaptee.html",
+            "context_hits": [],
+            "field_hits": [],
+            "explanation": "Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.",
+            "metadata": {
+              "sentence_index": 24,
+              "similarity": 88.88888888888889
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_laurent_moreau_capacite_inadaptee.pdf:page_3",
+    "metadata": {
+      "file_name": "adhesion_laurent_moreau_capacite_inadaptee.pdf",
+      "file_path": "data\\raw\\adhesion_laurent_moreau_capacite_inadaptee.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_3",
+      "page_number": 3
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.6222,
+        "decision": "review",
+        "method_scores": {
+          "fuzzy": 0.6222
+        },
+        "explanation": "fuzzy -> 'incapacite' (0.62)",
+        "evidences": [
+          {
+            "method": "fuzzy",
+            "score": 0.6222,
+            "trigger": "incapacite",
+            "matched_variant": "capacite",
+            "sentence": "Capacite Inadaptee\nfile:///D:/Workspaces/pocComplianceNLP/templates/adhesion_laurent_moreau_capacite_inadaptee.html",
+            "context_hits": [],
+            "field_hits": [],
+            "explanation": "Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.",
+            "metadata": {
+              "sentence_index": 4,
+              "similarity": 88.88888888888889
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_nadia_benali.pdf:page_1",
+    "metadata": {
+      "file_name": "adhesion_nadia_benali.pdf",
+      "file_path": "data\\raw\\adhesion_nadia_benali.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_nadia_benali.pdf:page_2",
+    "metadata": {
+      "file_name": "adhesion_nadia_benali.pdf",
+      "file_path": "data\\raw\\adhesion_nadia_benali.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_2",
+      "page_number": 2
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.6755,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66,
+          "fuzzy": 0.6222
+        },
+        "explanation": "lexical -> 'traitement' (0.66); fuzzy -> 'incapacite' (0.62)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires\nLa souscriptrice accepte une volatilite plus elevee en contrepartie d'un potentiel de\nrendement superieur sur longue duree.\n9.",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 16
+            }
+          },
+          {
+            "method": "fuzzy",
+            "score": 0.6222,
+            "trigger": "incapacite",
+            "matched_variant": "capacite",
+            "sentence": "Justification de l'adequation entre le profil client et la solution proposee\nLa recommandation est coherente avec l'horizon long, l'experience financiere declaree\net la capacite a supporter des fluctuations de valeur.",
+            "context_hits": [],
+            "field_hits": [],
+            "explanation": "Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.",
+            "metadata": {
+              "sentence_index": 23,
+              "similarity": 88.88888888888889
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_nadia_benali.pdf:page_3",
+    "metadata": {
+      "file_name": "adhesion_nadia_benali.pdf",
+      "file_path": "data\\raw\\adhesion_nadia_benali.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_3",
+      "page_number": 3
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf:page_1",
+    "metadata": {
+      "file_name": "adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf",
+      "file_path": "data\\raw\\adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf:page_2",
+    "metadata": {
+      "file_name": "adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf",
+      "file_path": "data\\raw\\adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_2",
+      "page_number": 2
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.66,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66
+        },
+        "explanation": "lexical -> 'traitement' (0.66)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 16
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf:page_3",
+    "metadata": {
+      "file_name": "adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf",
+      "file_path": "data\\raw\\adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_3",
+      "page_number": 3
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_sandrine_roche_formule_par_defaut_fautes.pdf:page_1",
+    "metadata": {
+      "file_name": "adhesion_sandrine_roche_formule_par_defaut_fautes.pdf",
+      "file_path": "data\\raw\\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_sandrine_roche_formule_par_defaut_fautes.pdf:page_2",
+    "metadata": {
+      "file_name": "adhesion_sandrine_roche_formule_par_defaut_fautes.pdf",
+      "file_path": "data\\raw\\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_2",
+      "page_number": 2
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.62,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.62
+        },
+        "explanation": "lexical -> 'foi' (0.62)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.62,
+            "trigger": "foi",
+            "matched_variant": "foi",
+            "sentence": "La cliente ne comprand pas bien les diferences entre les suport et pose plusieur fois les\nmemes question sur les risque et la disponnibilite.",
+            "context_hits": [],
+            "field_hits": [],
+            "explanation": "Correspondance lexicale exacte du terme 'foi' dans la phrase.",
+            "metadata": {
+              "sentence_index": 18
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.66,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66
+        },
+        "explanation": "lexical -> 'traitement' (0.66)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires\nLa cliente indique avoir besoin d'explications simples et dit ne pas etre a l'aise avec les\nplacements financiers.\n9.",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 15
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "adhesion_sandrine_roche_formule_par_defaut_fautes.pdf:page_3",
+    "metadata": {
+      "file_name": "adhesion_sandrine_roche_formule_par_defaut_fautes.pdf",
+      "file_path": "data\\raw\\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_3",
+      "page_number": 3
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "souscriptions_assurance_vie_remplies.pdf:page_1",
+    "metadata": {
+      "file_name": "souscriptions_assurance_vie_remplies.pdf",
+      "file_path": "data\\raw\\souscriptions_assurance_vie_remplies.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_1",
+      "page_number": 1
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "souscriptions_assurance_vie_remplies.pdf:page_2",
+    "metadata": {
+      "file_name": "souscriptions_assurance_vie_remplies.pdf",
+      "file_path": "data\\raw\\souscriptions_assurance_vie_remplies.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_2",
+      "page_number": 2
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.66,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66
+        },
+        "explanation": "lexical -> 'traitement' (0.66)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 14
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "souscriptions_assurance_vie_remplies.pdf:page_3",
+    "metadata": {
+      "file_name": "souscriptions_assurance_vie_remplies.pdf",
+      "file_path": "data\\raw\\souscriptions_assurance_vie_remplies.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_3",
+      "page_number": 3
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "souscriptions_assurance_vie_remplies.pdf:page_4",
+    "metadata": {
+      "file_name": "souscriptions_assurance_vie_remplies.pdf",
+      "file_path": "data\\raw\\souscriptions_assurance_vie_remplies.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_4",
+      "page_number": 4
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "souscriptions_assurance_vie_remplies.pdf:page_5",
+    "metadata": {
+      "file_name": "souscriptions_assurance_vie_remplies.pdf",
+      "file_path": "data\\raw\\souscriptions_assurance_vie_remplies.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_5",
+      "page_number": 5
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.6755,
+        "decision": "review",
+        "method_scores": {
+          "lexical": 0.66,
+          "fuzzy": 0.6222
+        },
+        "explanation": "lexical -> 'traitement' (0.66); fuzzy -> 'incapacite' (0.62)",
+        "evidences": [
+          {
+            "method": "lexical",
+            "score": 0.66,
+            "trigger": "traitement",
+            "matched_variant": "traitement",
+            "sentence": "accepteesX Traitement des donnees accepte\nObservations complementaires\nLa souscriptrice accepte une volatilite plus elevee en contrepartie d'un potentiel de\nrendement superieur sur longue duree.\n9.",
+            "context_hits": [],
+            "field_hits": [
+              "observations"
+            ],
+            "explanation": "Correspondance lexicale exacte du terme 'traitement' dans la phrase.",
+            "metadata": {
+              "sentence_index": 16
+            }
+          },
+          {
+            "method": "fuzzy",
+            "score": 0.6222,
+            "trigger": "incapacite",
+            "matched_variant": "capacite",
+            "sentence": "Justification de l'adequation entre le profil client et la solution proposee\nLa recommandation est coherente avec l'horizon long, l'experience financiere declaree\net la capacite a supporter des fluctuations de valeur.",
+            "context_hits": [],
+            "field_hits": [],
+            "explanation": "Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.",
+            "metadata": {
+              "sentence_index": 23,
+              "similarity": 88.88888888888889
+            }
+          }
+        ]
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  },
+  {
+    "text_id": "souscriptions_assurance_vie_remplies.pdf:page_6",
+    "metadata": {
+      "file_name": "souscriptions_assurance_vie_remplies.pdf",
+      "file_path": "data\\raw\\souscriptions_assurance_vie_remplies.pdf",
+      "file_type": ".pdf",
+      "chunk_id": "page_6",
+      "page_number": 6
+    },
+    "decision_log": [
+      "linguistics_backend:spacy:fr_core_news_md",
+      "fuzzy:rapidfuzz",
+      "semantic:network_disabled",
+      "semantic:disabled_missing_local_model",
+      "semantic:error:Unrecognized processing class in sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes."
+    ],
+    "categories": [
+      {
+        "category_key": "RELIGION_BELIEF",
+        "category_label": "Religion ou convictions",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "HEALTH_DATA",
+        "category_label": "Donnees de sante",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "SEXUAL_ORIENTATION",
+        "category_label": "Orientation sexuelle ou vie sexuelle",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "POLITICAL_OPINION",
+        "category_label": "Opinions politiques",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "UNION_MEMBERSHIP",
+        "category_label": "Appartenance syndicale",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      },
+      {
+        "category_key": "GENETIC_BIOMETRIC",
+        "category_label": "Donnees genetiques ou biometrie",
+        "score": 0.0,
+        "decision": "clear",
+        "method_scores": {},
+        "explanation": "Aucune evidence significative.",
+        "evidences": []
+      }
+    ]
+  }
+]

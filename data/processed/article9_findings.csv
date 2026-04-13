@@ -1,9 +1,69 @@
-file_name,file_path,file_type,chunk_id,page_number,line_number,entity_name,matched_text,start,end,raw_score,adjusted_score,context_hits,risk_level
-adhesion_emilie_bernard_conseil_non_professionnel.pdf,data\raw\adhesion_emilie_bernard_conseil_non_professionnel.pdf,.pdf,page_2,2,16,HEALTH_ARTICLE9,Traitement,521,531,0.9,0.9,,high
-adhesion_julien_martin.pdf,data\raw\adhesion_julien_martin.pdf,.pdf,page_2,2,16,HEALTH_ARTICLE9,Traitement,597,607,0.9,0.9,,high
-adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,page_2,2,15,HEALTH_ARTICLE9,Traitement,490,500,0.9,0.9,,high
-adhesion_nadia_benali.pdf,data\raw\adhesion_nadia_benali.pdf,.pdf,page_2,2,15,HEALTH_ARTICLE9,Traitement,566,576,0.9,0.9,,high
-adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,data\raw\adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,.pdf,page_2,2,19,HEALTH_ARTICLE9,Traitement,745,755,0.9,0.9,,high
-adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,data\raw\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,.pdf,page_2,2,15,HEALTH_ARTICLE9,Traitement,473,483,0.9,0.9,,high
-souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,page_2,2,16,HEALTH_ARTICLE9,Traitement,597,607,0.9,0.9,,high
-souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,page_5,5,15,HEALTH_ARTICLE9,Traitement,566,576,0.9,0.9,,high
+file_name,file_path,file_type,chunk_id,page_number,line_number,entity_name,category_label,method,matched_text,matched_variant,raw_score,adjusted_score,category_score,decision,context_hits,field_hits,excerpt,explanation
+adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,data\raw\adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,.pdf,page_1,1,,RELIGION_BELIEF,Religion ou convictions,lexical,croyant,croyant,0.8,0.8,0.8867,alert,conseil|commentaire,conseil|commentaire,"neant
+Conseil: commentaire conseiller
+personne tres croyante
+Signature: recue le 13/04/2026",Correspondance lexicale exacte du terme 'croyant' dans la phrase.
+adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,data\raw\adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,.pdf,page_1,1,,RELIGION_BELIEF,Religion ou convictions,lexical,croyante,croyante,0.8,0.8,0.8867,alert,conseil|commentaire,conseil|commentaire,"neant
+Conseil: commentaire conseiller
+personne tres croyante
+Signature: recue le 13/04/2026",Correspondance lexicale exacte du terme 'croyante' dans la phrase.
+adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,data\raw\adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,.pdf,page_1,1,,RELIGION_BELIEF,Religion ou convictions,lexical,tres croyante,tres croyante,0.8,0.8,0.8867,alert,conseil|commentaire,conseil|commentaire,"neant
+Conseil: commentaire conseiller
+personne tres croyante
+Signature: recue le 13/04/2026",Correspondance lexicale exacte du terme 'tres croyante' dans la phrase.
+adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,data\raw\adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,.pdf,page_1,1,,RELIGION_BELIEF,Religion ou convictions,lexical,tres croyant,tres croyant,0.8,0.8,0.8867,alert,conseil|commentaire,conseil|commentaire,"neant
+Conseil: commentaire conseiller
+personne tres croyante
+Signature: recue le 13/04/2026",Correspondance lexicale exacte du terme 'tres croyant' dans la phrase.
+adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,data\raw\adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,.pdf,page_1,1,,RELIGION_BELIEF,Religion ou convictions,linguistic,croyance,croy,0.7,0.7,0.8867,alert,conseil|commentaire,conseil|commentaire,"neant
+Conseil: commentaire conseiller
+personne tres croyante
+Signature: recue le 13/04/2026",Correspondance linguistique par racines/lemmes pour 'croyance' avec les racines detectees ['croy'].
+adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,data\raw\adhesion_claire_dumas_conseil_personne_tres_croyante.pdf,.pdf,page_1,1,,HEALTH_DATA,Donnees de sante,lexical,questionnaire medical,questionnaire medical,0.71,0.71,0.71,review,medical,questionnaire,"Nom: Claire Dumas
+Produit: Horizon Vie Premium
+Questionnaire medical:",Correspondance lexicale exacte du terme 'questionnaire medical' dans la phrase.
+adhesion_emilie_bernard_conseil_non_professionnel.pdf,data\raw\adhesion_emilie_bernard_conseil_non_professionnel.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.66,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires
+La cliente a precise souhaiter un produit simple et peu volatil, avec possibilite de
+versements reguliers.
+9.",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+adhesion_julien_martin.pdf,data\raw\adhesion_julien_martin.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.66,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,page_1,1,,HEALTH_DATA,Donnees de sante,fuzzy,incapacite,capacite,0.6222,0.6222,0.6222,review,,,"Adhesion Laurent Moreau Capacite Inadaptee
+file:///D:/Workspaces/pocComplianceNLP/templates/adhesion_laurent_moreau_capacite_inadaptee.html 1/3",Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.
+adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,page_2,2,,RELIGION_BELIEF,Religion ou convictions,lexical,foi,foi,0.62,0.62,0.62,review,,,"Le client a signale des fins de mois parfois tendues mais souhaite quand meme se
+constituer un capital rapidement.
+9.",Correspondance lexicale exacte du terme 'foi' dans la phrase.
+adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.6755,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,fuzzy,incapacite,capacite,0.6222,0.6222,0.6755,review,,,"Adhesion Laurent Moreau Capacite Inadaptee
+file:///D:/Workspaces/pocComplianceNLP/templates/adhesion_laurent_moreau_capacite_inadaptee.html",Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.
+adhesion_laurent_moreau_capacite_inadaptee.pdf,data\raw\adhesion_laurent_moreau_capacite_inadaptee.pdf,.pdf,page_3,3,,HEALTH_DATA,Donnees de sante,fuzzy,incapacite,capacite,0.6222,0.6222,0.6222,review,,,"Capacite Inadaptee
+file:///D:/Workspaces/pocComplianceNLP/templates/adhesion_laurent_moreau_capacite_inadaptee.html",Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.
+adhesion_nadia_benali.pdf,data\raw\adhesion_nadia_benali.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.6755,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires
+La souscriptrice accepte une volatilite plus elevee en contrepartie d'un potentiel de
+rendement superieur sur longue duree.
+9.",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+adhesion_nadia_benali.pdf,data\raw\adhesion_nadia_benali.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,fuzzy,incapacite,capacite,0.6222,0.6222,0.6755,review,,,"Justification de l'adequation entre le profil client et la solution proposee
+La recommandation est coherente avec l'horizon long, l'experience financiere declaree
+et la capacite a supporter des fluctuations de valeur.",Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.
+adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,data\raw\adhesion_patrice_leroy_clause_beneficiaire_imprecise.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.66,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,data\raw\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,.pdf,page_2,2,,RELIGION_BELIEF,Religion ou convictions,lexical,foi,foi,0.62,0.62,0.62,review,,,"La cliente ne comprand pas bien les diferences entre les suport et pose plusieur fois les
+memes question sur les risque et la disponnibilite.",Correspondance lexicale exacte du terme 'foi' dans la phrase.
+adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,data\raw\adhesion_sandrine_roche_formule_par_defaut_fautes.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.66,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires
+La cliente indique avoir besoin d'explications simples et dit ne pas etre a l'aise avec les
+placements financiers.
+9.",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,page_2,2,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.66,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,page_5,5,,HEALTH_DATA,Donnees de sante,lexical,traitement,traitement,0.66,0.66,0.6755,review,,observations,"accepteesX Traitement des donnees accepte
+Observations complementaires
+La souscriptrice accepte une volatilite plus elevee en contrepartie d'un potentiel de
+rendement superieur sur longue duree.
+9.",Correspondance lexicale exacte du terme 'traitement' dans la phrase.
+souscriptions_assurance_vie_remplies.pdf,data\raw\souscriptions_assurance_vie_remplies.pdf,.pdf,page_5,5,,HEALTH_DATA,Donnees de sante,fuzzy,incapacite,capacite,0.6222,0.6222,0.6755,review,,,"Justification de l'adequation entre le profil client et la solution proposee
+La recommandation est coherente avec l'horizon long, l'experience financiere declaree
+et la capacite a supporter des fluctuations de valeur.",Approximation fuzzy entre 'incapacite' et 'capacite' avec une similarite de 88.88888888888889.

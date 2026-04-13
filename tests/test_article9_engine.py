@@ -1,6 +1,10 @@
 from __future__ import annotations
 
+import tempfile
 import unittest
+from pathlib import Path
+
+import yaml
 
 from src.article9_engine import Article9Engine
 from src.article9_engine.normalization import normalize_text, root_form
@@ -46,6 +50,29 @@ class EngineTests(unittest.TestCase):
         result = self.engine.analyze_text(text, text_id="clear_case")
         active = [category for category in result.category_results if category.decision != "clear"]
         self.assertEqual(active, [])
+
+    def test_default_engine_declares_network_disabled_for_semantic(self) -> None:
+        result = self.engine.analyze_text("Texte neutre", text_id="semantic_status_case")
+        self.assertIn("semantic:network_disabled", result.decision_log)
+
+    def test_engine_disables_semantic_when_local_model_is_missing(self) -> None:
+        config = yaml.safe_load(Path("configs/article9_categories.yml").read_text(encoding="utf-8"))
+        config["semantic"]["enabled"] = True
+        config["semantic"]["allow_network_download"] = False
+        config["semantic"]["local_files_only"] = True
+        config["semantic"]["model_name"] = "sentence-transformers/__model_that_should_not_exist__"
+
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".yml", delete=False) as handle:
+            yaml.safe_dump(config, handle, sort_keys=False)
+            temp_config_path = handle.name
+
+        try:
+            engine = Article9Engine(config_path=temp_config_path)
+            result = engine.analyze_text("Texte neutre", text_id="missing_local_model")
+            self.assertIn("semantic:network_disabled", result.decision_log)
+            self.assertIn("semantic:disabled_missing_local_model", result.decision_log)
+        finally:
+            Path(temp_config_path).unlink(missing_ok=True)
 
 
 if __name__ == "__main__":

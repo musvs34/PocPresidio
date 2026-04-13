@@ -27,7 +27,8 @@ Ce moteur est un dispositif de pre-controle et de scoring. Il ne tranche pas seu
 6. Detection semantique
    - similarite entre la phrase et des ancres semantiques de categorie
    - basee sur Sentence Transformers si disponible
-   - desactivee proprement si le modele n'est pas installe
+   - en scan, chargement local uniquement
+   - desactivee proprement si le modele n'est pas installe localement
 7. Fusion des signaux
    - score final par categorie
    - ponderation par methode
@@ -43,8 +44,6 @@ Ce moteur est un dispositif de pre-controle et de scoring. Il ne tranche pas seu
 ```text
 configs/
   article9_categories.yml
-  article9_vocabulary_template.csv
-  forbidden_words.csv
 data/
   raw/
   processed/
@@ -54,6 +53,7 @@ examples/
   article9_sample_sentences.json
 src/
   run_article9_examples.py
+  run_article9_prepare_resources.py
   run_article9_scan.py
   article9_engine/
     __init__.py
@@ -76,7 +76,7 @@ tests/
 - `RapidFuzz`
   Pour le fuzzy matching des fautes et variantes.
 - `Sentence Transformers`
-  Pour une couche semantique explicable et parametree par ancres.
+  Pour une couche semantique explicable et parametree par ancres. Le telechargement des modeles doit etre realise dans une etape de preparation distincte du scan.
 - `Presidio`
   Reste pertinent comme brique complementaire ou pour l'orchestration ulterieure, mais la couche metier article 9 reste ici pilotee par une configuration specifique assurance-vie.
 
@@ -110,6 +110,17 @@ Le moteur renvoie :
 - un fichier detail des evidences
 - un recapitulatif par document
 - un JSON detaille contenant les justifications
+
+Le `decision_log` documente explicitement l'etat de la couche semantique :
+- `semantic:network_disabled`
+- `semantic:local_loaded`
+- `semantic:disabled_missing_local_model`
+
+## Separation bootstrap / scan
+- `run_article9_prepare_resources.py`
+  Etape autorisee a telecharger les ressources externes.
+- `run_article9_scan.py`
+  Etape offline-by-default. Elle n'est pas autorisee a telecharger de modele.
 
 Chaque evidence inclut :
 - categorie

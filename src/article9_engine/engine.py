@@ -37,21 +37,30 @@ class Article9Engine:
                 "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
             ),
             similarity_threshold=float(self.config.semantic.get("similarity_threshold", 0.62)),
+            allow_network_download=bool(
+                self.config.semantic.get("allow_network_download", False)
+            ),
+            local_files_only=bool(self.config.semantic.get("local_files_only", True)),
         )
 
     def _decision_log(self) -> list[str]:
-        semantic_status = (
-            f"semantic:{self.semantic_detector.model_name}"
-            if self.semantic_detector.available
-            else "semantic:disabled_or_unavailable"
-        )
         fuzzy_status = (
             "fuzzy:rapidfuzz" if self.fuzzy_detector.available else "fuzzy:disabled_or_unavailable"
         )
+        semantic_log = [
+            "semantic:network_allowed"
+            if self.semantic_detector.allow_network_download
+            else "semantic:network_disabled",
+            f"semantic:{self.semantic_detector.status}",
+        ]
+        if self.semantic_detector.error_message:
+            semantic_log.append(
+                f"semantic:error:{self.semantic_detector.error_message}"
+            )
         return [
             f"linguistics_backend:{self.text_analyzer.backend}",
             fuzzy_status,
-            semantic_status,
+            *semantic_log,
         ]
 
     def analyze_text(

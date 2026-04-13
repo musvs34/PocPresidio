@@ -140,6 +140,7 @@ class FuzzyDetector:
             best_ratio = 0
             best_candidate = ""
             term_len = max(1, len(tokenize_normalized(normalized_term)))
+            term_char_len = len(normalized_term.replace(" ", ""))
             min_len = max(1, term_len - self.ngram_delta)
             max_len = max(min_len, term_len + self.ngram_delta)
 
@@ -148,6 +149,9 @@ class FuzzyDetector:
                     continue
                 for index in range(0, len(sentence_tokens) - ngram_len + 1):
                     candidate = " ".join(sentence_tokens[index : index + ngram_len])
+                    candidate_char_len = len(candidate.replace(" ", ""))
+                    if candidate_char_len < max(4, term_char_len - 2):
+                        continue
                     ratio = self._fuzz.WRatio(normalized_term, candidate)
                     if ratio > best_ratio:
                         best_ratio = ratio
@@ -179,14 +183,26 @@ class FuzzyDetector:
 class SemanticDetector:
     method_name = "semantic"
 
-    def __init__(self, enabled: bool, model_name: str, similarity_threshold: float):
+    def __init__(
+        self,
+        enabled: bool,
+        model_name: str,
+        similarity_threshold: float,
+        *,
+        allow_network_download: bool = False,
+        local_files_only: bool = True,
+    ):
         self.enabled = enabled
         self.model_name = model_name
         self.similarity_threshold = similarity_threshold
+        self.allow_network_download = allow_network_download
+        self.local_files_only = local_files_only
         self.available = False
         self._model = None
         self._category_embeddings: dict[str, list[list[float]]] = {}
         self._sentence_cache: dict[str, list[float]] = {}
+        self.status = "disabled_config"
+        self.error_message = ""
         if enabled:
             self._load_model()
 
@@ -194,11 +210,22 @@ class SemanticDetector:
         try:
             from sentence_transformers import SentenceTransformer
 
-            self._model = SentenceTransformer(self.model_name)
+            self._model = SentenceTransformer(
+                self.model_name,
+                local_files_only=self.local_files_only,
+            )
             self.available = True
-        except Exception:
+            self.status = "local_loaded" if self.local_files_only else "loaded_with_network_allowed"
+        except Exception as exc:
             self._model = None
             self.available = False
+            self.error_message = str(exc)
+            if self.local_files_only:
+                self.status = "disabled_missing_local_model"
+            elif not self.allow_network_download:
+                self.status = "network_disabled"
+            else:
+                self.status = "disabled_load_error"
 
     def _encode_sentence(self, text: str):
         cached = self._sentence_cache.get(text)

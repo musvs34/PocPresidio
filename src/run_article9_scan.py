@@ -9,7 +9,7 @@ from article9_engine.reporting import analyze_directory, write_reports
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Scan raw files for RGPD article 9 hints with a multicouche French engine."
+        description="Scan raw files for RGPD article 9 hints with an offline-by-default multicouche French engine."
     )
     parser.add_argument(
         "--input-dir",
