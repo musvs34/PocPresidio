@@ -1,0 +1,200 @@
+{
+  "id": "3c5697e0",
+  "name": "streamlit-v111",
+  "display_name": "Streamlit V1.1.1",
+  "description": "",
+  "python_version": "3.12",
+  "packages_conda": [
+    {
+      "name": "python",
+      "version": "3.12",
+      "source": "conda"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4",
+      "source": "conda"
+    },
+    {
+      "name": "pandas",
+      "version": "2.2.2",
+      "source": "conda"
+    },
+    {
+      "name": "polars",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.9.2",
+      "source": "conda"
+    },
+    {
+      "name": "plotly",
+      "version": "5.24.1",
+      "source": "conda"
+    },
+    {
+      "name": "altair",
+      "version": "5.0.1",
+      "source": "conda"
+    },
+    {
+      "name": "streamlit",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "streamlit-aggrid",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "streamlit-option-menu",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "streamlit-extras",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "jupyter-server-proxy",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.0.34",
+      "source": "conda"
+    },
+    {
+      "name": "pyodbc",
+      "version": "5.1.0",
+      "source": "conda"
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "source": "conda"
+    },
+    {
+      "name": "pyarrow",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "fastparquet",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.3",
+      "source": "conda"
+    },
+    {
+      "name": "beautifulsoup4",
+      "version": "4.12.3",
+      "source": "conda"
+    },
+    {
+      "name": "scrapy",
+      "version": "2.11.1",
+      "source": "conda"
+    },
+    {
+      "name": "lxml",
+      "version": "5.2.1",
+      "source": "conda"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.8.2",
+      "source": "conda"
+    },
+    {
+      "name": "fastapi",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "uvicorn",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "httpx",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "",
+      "source": "conda"
+    },
+    {
+      "name": "networkx",
+      "version": "3.3",
+      "source": "conda"
+    },
+    {
+      "name": "joblib",
+      "version": "1.4.2",
+      "source": "conda"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.1",
+      "source": "conda"
+    },
+    {
+      "name": "pillow",
+      "version": "10.4.0",
+      "source": "conda"
+    },
+    {
+      "name": "ipykernel",
+      "version": "6.31.0",
+      "source": "conda"
+    },
+    {
+      "name": "ipywidgets",
+      "version": "",
+      "source": "conda"
+    }
+  ],
+  "packages_pip": [],
+  "state": "BROUILLON",
+  "created_by": "markan",
+  "created_at": "2026-08-05T16:14:43.153600",
+  "updated_at": "2026-08-05T17:06:45.855139",
+  "validated_by": "",
+  "validated_at": "",
+  "env_path": "/opt/conda/envs/streamlit-v111",
+  "env_size_mb": 0.0,
+  "cve_scans": [],
+  "history": [
+    {
+      "timestamp": "2026-08-05T16:14:43.153620",
+      "action": "created",
+      "user": "markan",
+      "old_state": "",
+      "new_state": "BROUILLON",
+      "details": "Kernel créé avec Python 3.12"
+    },
+    {
+      "timestamp": "2026-08-05T17:06:45.855116",
+      "action": "packages_updated",
+      "user": "markan",
+      "old_state": "BROUILLON",
+      "new_state": "BROUILLON",
+      "details": "Packages modifiés (conda: 387→32 pkgs, pip: 0→0 pkgs)."
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "cve_waiver": null
+}
